@@ -20,11 +20,11 @@ unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
 x_training <- read.table("./data/UCI HAR Dataset/train/X_train.txt")
 y_training <- read.table("./data/UCI HAR Dataset/train/y_train.txt")
-subject_train <- read.table("./data/UCI HAR Dataset/train/subject_train.txt")
+subject_training <- read.table("./data/UCI HAR Dataset/train/subject_train.txt")
 
 x_testing <- read.table("./data/UCI HAR Dataset/test/X_test.txt")
 y_testing <- read.table("./data/UCI HAR Dataset/test/y_test.txt")
-subject_test <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
+subject_testing <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
 
 features <- read.table('./data/UCI HAR Dataset/features.txt')
 
@@ -85,4 +85,5 @@ sec_ind_tidy_set <- sec_ind_tidy_set [order(sec_ind_tidy_set $subject, sec_ind_t
 #Finally, writing the second tidy data set in txt file
 
 write.table(sec_ind_tidy_set, " sec_ind_tidy_set.txt", row.name=FALSE)
+
 
