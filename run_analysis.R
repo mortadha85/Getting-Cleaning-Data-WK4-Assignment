@@ -28,7 +28,7 @@ subject_testing <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
 
 features <- read.table('./data/UCI HAR Dataset/features.txt')
 
-activity_labels <- read.table('./data/UCI HAR Dataset/activity_labels.txt')
+activity_labels = read.table('./data/UCI HAR Dataset/activity_labels.txt')
 
 # Second is assigning column names as follows
 
